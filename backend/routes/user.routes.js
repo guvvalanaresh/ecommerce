@@ -1,0 +1,12 @@
+import express from 'express';
+import auth from '../middleware/auth.middleware.js';
+import { getProfile, updateProfile, listAddresses, addAddress, updateAddress, deleteAddress, getWallet } from '../controllers/user.controller.js';
+const router = express.Router();
+router.get('/me', auth, getProfile);
+router.put('/me', auth, updateProfile);
+router.get('/me/addresses', auth, listAddresses);
+router.post('/me/addresses', auth, addAddress);
+router.put('/me/addresses/:address_id', auth, updateAddress);
+router.delete('/me/addresses/:address_id', auth, deleteAddress);
+router.get('/me/wallet', auth, getWallet);
+export default router;

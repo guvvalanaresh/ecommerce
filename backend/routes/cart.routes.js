@@ -1,0 +1,11 @@
+import express from 'express';
+import auth from '../middleware/auth.middleware.js';
+import { getCart, addItem, updateCartItem, removeCartItem, applyCoupon, clearCart } from '../controllers/cart.controller.js';
+const router = express.Router();
+router.get('/', auth, getCart);
+router.post('/items', auth, addItem);
+router.put('/items/:cart_item_id', auth, updateCartItem);
+router.delete('/items/:cart_item_id', auth, removeCartItem);
+router.post('/coupons', auth, applyCoupon);
+router.delete('/', auth, clearCart);
+export default router;
