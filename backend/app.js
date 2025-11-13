@@ -42,3 +42,6 @@ app.use(errorHandler);
 const port = config.port;
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));
+
+
+// Now server is running fine on port 8000
