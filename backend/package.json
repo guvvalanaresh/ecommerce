@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js",
-    "prisma": "prisma"
+    "prisma": "prisma",
+    "seed": "node prisma/seed.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
-    "@prisma/extension-accelerate": "^2.0.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
