@@ -26,6 +26,7 @@ async function main() {
     });
   }
 
+    // TODO: Here we will cloudinary links later after uploading in the cloudinary
   const menuImages = [
     "https://res.cloudinary.com/demo/image/upload/v1/food/margherita_pizza.jpg",
     "https://res.cloudinary.com/demo/image/upload/v1/food/pepperoni_pizza.jpg",
