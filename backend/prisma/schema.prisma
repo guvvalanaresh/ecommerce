@@ -44,6 +44,7 @@ model Restaurant {
   cuisines    String[]
   rating      Float    @default(0)
   minOrder    Float    @default(0)
+  image       String?
   menuItems   MenuItem[]
   createdAt   DateTime @default(now())
 }
