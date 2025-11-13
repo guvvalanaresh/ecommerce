@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      
+      <h1 className='text-red-300 text-2xl'>Frontend</h1>
     </div>
   )
 }
