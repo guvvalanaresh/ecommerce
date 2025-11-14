@@ -9,6 +9,7 @@ import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import Orders from "./pages/Orders";
 import Checkout from "./pages/Checkout";
+import OrderDetails from "./pages/OrderDetails";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/orders/:order_id" element={<OrderDetails />} />
           </Routes>
         </div>
       </div>
