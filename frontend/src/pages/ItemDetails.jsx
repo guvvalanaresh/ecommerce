@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getItemDetails } from "../api/item.api";
+import { getItemDetails } from "../api/items.api.js";
 import { addToCart } from "../api/cart.api.js";
 
 export default function ItemDetails() {
