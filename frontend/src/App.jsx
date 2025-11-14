@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import Orders from "./pages/Orders";
 import Checkout from "./pages/Checkout";
 import OrderDetails from "./pages/OrderDetails";
+import ItemDetails from "./pages/ItemDetails";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/orders" element={<Orders />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/orders/:order_id" element={<OrderDetails />} />
+            <Route path="/item/:item_id" element={<ItemDetails />} />
           </Routes>
         </div>
       </div>

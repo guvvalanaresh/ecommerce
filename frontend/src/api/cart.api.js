@@ -13,3 +13,6 @@ export const applyCoupon = (coupon) =>
 
 export const clearCart = () =>
   api.delete("/cart");
+
+export const addToCart = (data) =>
+  api.post("/cart/items", data);
